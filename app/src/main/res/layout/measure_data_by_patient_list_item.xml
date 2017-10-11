@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="10dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <!--测量时间-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/measure_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/measure_time"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/measure_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/measure_time_tv"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:paddingTop="10dp"
+        android:background="#d3d3d3"
+        />
+
+    <!--ecg参数-->
+    <LinearLayout
+        android:id="@+id/ecg_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/measure_time"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        <!--hr-->
+        <TextView
+            android:id="@+id/ecg_hr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ecg_hr"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/ecg_hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <!--resp参数-->
+    <LinearLayout
+        android:id="@+id/resp_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/measure_time"
+        android:layout_toRightOf="@id/ecg_ll"
+        android:layout_marginRight="20dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:orientation="horizontal"
+		android:visibility="gone">
+        <!--respRr-->
+        <TextView
+            android:id="@+id/resp_rr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resp_rr"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/resp_rr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--spo2参数-->
+    <LinearLayout
+        android:id="@+id/spo2_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/measure_time"
+        android:layout_toRightOf="@id/resp_ll"
+        android:layout_marginRight="20dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:orientation="horizontal">
+        <!--spo2Trend-->
+        <TextView
+            android:id="@+id/spo2_trend_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spo2_trend"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/spo2_trend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+        <!--spo2Pr-->
+        <TextView
+            android:id="@+id/spo2_pr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/spo2_pr"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/spo2_pr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--temp参数-->
+    <LinearLayout
+        android:id="@+id/temp_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/measure_time"
+        android:layout_toRightOf="@id/spo2_ll"
+        android:layout_alignWithParentIfMissing="true"
+        android:orientation="horizontal"
+		android:visibility="gone">
+        <!--t1-->
+        <TextView
+            android:id="@+id/temp_t1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temp_t1"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/temp_t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+        <!--t2-->
+        <TextView
+            android:id="@+id/temp_t2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temp_t2"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/temp_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+        <!--td-->
+        <TextView
+            android:id="@+id/temp_td_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temp_td"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/temp_td"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--nibp参数-->
+    <LinearLayout
+        android:id="@+id/nibp_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/measure_time"
+        android:layout_alignWithParentIfMissing="true"
+        android:orientation="horizontal"
+		android:layout_toRightOf="@id/temp_ll">
+        <!--nibp-->
+        <TextView
+            android:id="@+id/nibp_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nibp"
+            android:textSize="16sp"/>
+         <TextView
+            android:id="@+id/nibp_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--temp参数-->
+    <LinearLayout
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/measure_time"
+        android:layout_alignWithParentIfMissing="true"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/temp_ll">
+        <!--nibp-->
+        <TextView
+            android:id="@+id/temp_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/irtemp_trend"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/temp_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

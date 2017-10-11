@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/wave_bgcolor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.konsung.defineview.WaveForm_Ecg
+                android:id="@+id/wave_i"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+            <com.konsung.defineview.WaveForm_Ecg
+                android:id="@+id/wave_ii"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+            <com.konsung.defineview.WaveForm_Ecg
+                android:id="@+id/wave_iii"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+             <com.konsung.defineview.WaveForm_Ecg
+                 android:id="@+id/wave_AVR"
+                 android:layout_width="match_parent"
+                 android:layout_height="120dp" />
+
+             <com.konsung.defineview.WaveForm_Ecg
+                 android:id="@+id/wave_AVL"
+                 android:layout_width="match_parent"
+                 android:layout_height="120dp" />
+
+            <com.konsung.defineview.WaveForm_Ecg
+                android:id="@+id/wave_AVF"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+            <com.konsung.defineview.WaveForm_Ecg
+                android:id="@+id/wave_V"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+            <com.konsung.defineview.WaveForm_co2
+                android:id="@+id/wave_co2"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"/>
+
+            <com.konsung.defineview.WaveForm_resp
+                android:id="@+id/wave_resp"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp" />
+
+            <com.konsung.defineview.WaveForm_spo2
+                android:id="@+id/wave_spo2"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="float_btn_color">#4DB133</color>
+    <color name="txt_color">#454545</color>
+    <color name="line_color">#7CFC00</color>
+    <color name="grass_konsung">#4DB133</color>
+    <color name="main_txt">#FF9933</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent_black">#80000000</color>
+
+    <color name="list_item_selected">#ff8cb18d</color>
+    <color name="list_item_unselected">#4DB133</color>
+    <color name="popup_select">#848586</color>
+
+    <color name="ecg_color">#00ff00</color>
+    <color name="ecg_twinkle_color">#8800ff00</color>
+
+    <color name="resp_color">#ffff00</color>
+    <color name="resp_twinkle_color">#88ffff00</color>
+
+    <color name="spo_color">#00ffff</color>
+    <color name="spo_twinkle_color">#8800ffff</color>
+
+    <color name="temp_color">#ff8000</color>
+    <color name="temp_twinkle_color">#88ff8000</color>
+
+    <color name="nibp_color">#ffe7ba</color>
+    <color name="nibp_twinkle_color">#88ffe7ba</color>
+
+    <color name="ibp_color">#ff0000</color>
+
+    <color name="co2_text">#ff00ff</color>
+    <color name="co2_color">#ff8080</color>
+    <color name="co2_twinkle_color">#88ff8080</color>
+
+    <color name="tab_color">#666469</color>
+
+    <color name="sc_color">#ffffff</color>
+
+    <color name="wave_bgcolor">#ce221f21</color>
+</resources>

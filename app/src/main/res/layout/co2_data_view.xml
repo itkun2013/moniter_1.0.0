@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/co2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EtCO2"
+        android:textColor="@color/co2_color_selector"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/co2"
+        android:layout_below="@id/co2"
+        android:text="mmHg"
+        android:textColor="@color/co2_color_selector"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/up_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/co2"
+        android:layout_below="@id/unit"
+        android:text="100"
+        android:textColor="@color/co2_color_selector"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/down_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/co2"
+        android:layout_below="@id/up_value"
+        android:text="64"
+        android:textColor="@color/co2_color_selector"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/co2_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarm_low"
+        android:layout_below="@id/down_value"
+        android:layout_alignRight="@id/down_value"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/awrr_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="-?-"
+        android:textColor="@color/co2_color_selector"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/awrr_up_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/co2_color_selector"
+        android:textSize="12sp"
+        android:layout_toLeftOf="@id/awrr_value"
+        android:layout_alignBottom="@+id/awrr"
+        android:text="30"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:id="@+id/awrr_down_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/co2_color_selector"
+        android:layout_below="@id/awrr_up_value"
+        android:layout_alignRight="@id/awrr_up_value"
+        android:textSize="12sp"
+        android:text="8"/>
+
+    <ImageView
+        android:id="@+id/awrr_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarm_low"
+        android:layout_below="@id/awrr_down_value"
+        android:layout_alignRight="@id/awrr_down_value"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/awrr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AwRR"
+        android:textColor="@color/co2_color_selector"
+        android:textSize="15sp"
+        android:layout_toLeftOf="@id/awrr_up_value"
+        android:layout_marginRight="3dp"/>
+
+
+
+    <TextView
+        android:id="@+id/awrr_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/co2_color_selector"
+        android:layout_below="@id/awrr"
+        android:layout_alignLeft="@id/awrr"
+        android:textSize="12sp"
+        android:text="rpm"/>
+
+    <TextView
+        android:id="@+id/fico2_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="-?-"
+        android:textColor="@color/co2_color_selector"
+        android:layout_below="@id/awrr_value"
+        android:layout_alignLeft="@id/awrr_value"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/fico2_up_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/co2_color_selector"
+        android:textSize="12sp"
+        android:layout_toLeftOf="@id/awrr_value"
+        android:layout_alignTop="@+id/fico2_value"
+        android:text="30"
+        android:layout_marginRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/fico2_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarm_low"
+        android:layout_below="@id/fico2_up_value"
+        android:layout_alignRight="@id/fico2_up_value"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/fico2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FiCO2"
+        android:textColor="@color/co2_color_selector"
+        android:textSize="15sp"
+        android:layout_toLeftOf="@id/fico2_up_value"
+        android:layout_alignBottom="@id/fico2_up_value"
+        android:layout_marginRight="3dp"/>
+
+
+
+    <TextView
+        android:id="@+id/fico2_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/co2_color_selector"
+        android:layout_below="@id/fico2"
+        android:layout_alignLeft="@id/awrr"
+        android:textSize="12sp"
+        android:text="mmHg"/>
+
+
+
+
+    <TextView
+        android:id="@+id/co2_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/down_value"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/awrr"
+        android:layout_toRightOf="@id/co2"
+        android:gravity="center"
+        android:text="-?-"
+        android:textColor="@color/co2_color_selector"
+        android:textSize="60sp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

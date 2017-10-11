@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="ver">v1.0.0-39</string>
+    <!--UI-->
+    <string name="app_name">健康一体机</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="patient">用户</string>
+    <string name="add_patient">增加用户</string>
+    <string name="show_patient_name">用户姓名</string>
+    <string name="query_patient">查询用户</string>
+    <string name="show_all_patient">全部用户</string>
+    <string name="change_patient">切换用户</string>
+    <string name="image_Description">defaultDesc</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="patient_name">姓名:</string>
+    <string name="patient_type">病人类型:</string>
+    <string name="patient_age">年龄:</string>
+    <string name="patient_sex">性别:</string>
+    <string name="patient_blood">血型:</string>
+    <string name="patient_height">身高:</string>
+    <string name="patient_weight">体重:</string>
+    <string name="patient_birthday">出生日期:</string>
+    <string name="patient_idCard">身份证:</string>
+    <string name="patient_birthday_btn">点击选择日期</string>
+    <string name="measure_time">测量时间:</string>
+    <string name="patient_login">请登录病人</string>
+    <string name="modift_patient">修改用户</string>
+
+    <string name="image_description_health_check">健康测量</string>
+    <string name="image_description_public_administration">行政管理</string>
+    <string name="image_description_public_health">公共卫生</string>
+    <string name="image_description_setting">系统设置</string>
+    <string name="system_help">帮助</string>
+    <string name="patient_detail">病人信息</string>
+    <string name="measure_detail">测量信息</string>
+    <string name="not_empty_1">科室不能为空</string>
+    <string name="not_empty_2">病历号不能为空</string>
+    <string name="not_empty_3">医生能为空</string>
+    <string name="not_empty_4">姓氏不能为空</string>
+    <string name="not_empty_5">名字不能为空</string>
+    <string name="not_empty_6">床号不能为空</string>
+
+
+    <!--血压按钮UI-->
+    <string name="nibp_btn_start">启动测量</string>
+    <string name="nibp_btn_stop">停止测量</string>
+    <string name="nibp_start_fail">"启动血压失败,请重新启动"</string>
+
+    <string name="default_value">-?-</string>
+
+    <string name="nibbp_result_0">恭喜,测量成功!</string>
+    <string name="nibbp_result_1">测量失败,袖带太松</string>
+    <string name="nibbp_result_2">测量失败,系统漏气</string>
+    <string name="nibbp_result_3">测量失败,空气压力错</string>
+    <string name="nibbp_result_4">测量失败,信号弱</string>
+    <string name="nibbp_result_5">测量失败,测量超范围</string>
+    <string name="nibbp_result_6">测量失败,信号干扰</string>
+    <string name="nibbp_result_7">测量失败,袖带压力过大</string>
+    <string name="nibbp_result_8">测量失败,信号饱和</string>
+    <string name="nibbp_result_9">测量失败,漏气检测失败</string>
+    <string name="nibbp_result_10">测量失败,系统故障</string>
+    <string name="nibbp_result_11">测量失败,袖带类型错误</string>
+    <string name="nibbp_result_12">测量失败,测量超时</string>
+
+    <!--ecgUI-->
+    <string name="ecg_pls_checkforline">请接好导联线</string>
+    <string name="ecg_pls_checkfordevice">请启动服务</string>
+    <string name="ecg_pls_keep_quiet_wait_check">静待启动测量</string>
+    <string name="ecg_pls_keep_quiet_while_check">测量中，请保持安静</string>
+    <string name="ecg_check_complited">恭喜，测量完成</string>
+    <string name="ecg_check_timeout">测量超时，请重新测量！</string>
+
+    <!--ecg参数-->
+    <string name="ecg_hr">心率:</string>
+    <string name="ecg_pvcs">PVCs</string>
+    <string name="ecg_st">ST</string>
+    <string name="no_pvcs">-?-</string>
+
+    <string name="ecg_dg_hr">hr:</string>
+    <string name="ecg_dg_pvcs">pvcs:</string>
+    <string name="ecg_dg_st">st:</string>
+
+    <string name="ecg_title_I">I导联</string>
+    <string name="ecg_title_II">II导联</string>
+    <string name="ecg_title_III">III导联</string>
+    <string name="ecg_title_AVR">AVR导联</string>
+    <string name="ecg_title_AVL">AVL导联</string>
+    <string name="ecg_title_AVF">AVF导联</string>
+    <string name="ecg_title_V1">V导联</string>
+    <string name="ecg_title_V">V导联</string>
+    <string name="ecg_title_V2">V2导联</string>
+    <string name="ecg_title_V3">V3导联</string>
+    <string name="ecg_title_V4">V4导联</string>
+    <string name="ecg_title_V5">V5导联</string>
+    <string name="ecg_title_V6">V6导联</string>
+    <!--网络-->
+    <string name="wifi_internet_no">wifi上不了网，请重新设置</string>
+    <string name="wifi_unconnent">wifi断开连接，请重新设置</string>
+
+    <!--呼吸率-->
+    <string name="over_breath_top">呼吸率上限无效，请重新设置</string>
+    <string name="over_breath_down">呼吸率下限无效，请重新设置</string>
+    <string name="not_valid">输入为无效值，请重新设置</string>
+    <!--resp参数-->
+    <string name="resp_rr">RespRr:</string>
+
+    <!--spo2 UI 界面-->
+    <string name="spo2_waiting">等待测量...</string>
+    <string name="spo2_isChecking">正在测量...</string>
+    <string name="spo2_pls_put_probe">请插入血氧探头</string>
+    <string name="spo2_pls_put_finger">请将手指插入探头</string>
+    <string name="spo2_check_complited">恭喜,检测完成</string>
+
+    <!--spo2参数-->
+    <string name="spo2_trend">血氧:</string>
+    <string name="spo2_pr">脉率:</string>
+    <string name="spo2_ware">"血氧波"</string>
+
+    <string name="spo2_dg_trend">血氧:</string>
+    <string name="spo2_dg_pr">脉率:</string>
+    <string name="measure">重新测量</string>
+
+    <!--temp参数-->
+
+    <string name="temp_t1">T1:</string>
+    <string name="temp_t2">T2:</string>
+    <string name="temp_td">Td:</string>
+    <string name="temp_dg_t1">T1:</string>
+    <string name="temp_dg_t2">T2:</string>
+    <string name="temp_dg_td">Td:</string>
+
+    <!--IrTemp体温-->
+    <string name="irtemp_trend">体温:</string>
+    <string name="irtemp_dg_trend">体温:</string>
+
+    <!--nibp参数-->
+    <string name="nibp">血压:</string>
+    <string name="nibp_dia">舒张压</string>
+    <string name="nibp_sys">收缩压</string>
+    <string name="nibp_map">平均压</string>
+    <string name="nibp_pr">脉率</string>
+    <string name="nibp_cuff">袖带压</string>
+
+    <!--血糖-->
+    <string name="blood_glu_trend">血糖:</string>
+
+    <string-array name="sex_spinner_array">
+        <item>男</item>
+        <item>女</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="blood_spinner_array">
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+        <item>N</item>
+    </string-array>
+
+    <string-array name="patient_type_array">
+        <item>成人</item>
+        <item>小儿</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <!--urinert参数-->
+    <string name="urinert_leu">LEU:</string>
+    <string name="urinert_nit">NIT:</string>
+    <string name="urinert_ubg">UBG:</string>
+    <string name="urinert_pro">PRO:</string>
+    <string name="urinert_ph">PH:</string>
+    <string name="urinert_bld">BLD:</string>
+    <string name="urinert_sg">SG:</string>
+    <string name="urinert_bil">BIL:</string>
+    <string name="urinert_ket">KET:</string>
+    <string name="urinert_glu">GLU:</string>
+    <string name="urinert_vc">VC:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fragment_pls_select_patient">请先选择病人</string>
+    <string name="actionbar_pls_select_patient">请登录病人</string>
+    <string name="is_network_connecting">检测到网络，是否上传数据？</string>
+    <string name="commit">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="create_title">温馨提示</string>
+    <string name="is_create_new_record">是否创建一条新纪录？</string>
+    <string name="limit_nums">测量记录限制数:</string>
+
+    <string name="updata_title">网络状态</string>
+    <string name="isloading">正在加载中，请稍后</string>
+    <string name="upload_failure">网络异常，请稍后重试</string>
+    <string name="upload_success">上传成功</string>
+    <string name="uploading">正在上传中，请稍后</string>
+
+    <!--离线版公共卫生-->
+    <string name="personal_detail">个人基本信息表</string>
+    <string name="detail_name">姓名:</string>
+    <string name="detail_nums">编号:</string>
+    <string name="detail_sex">性别:</string>
+    <string-array name="detail_sex">
+        <item>0.未知的性别</item>
+        <item>1.男</item>
+        <item>2.女</item>
+        <item>9.未说明的性别</item>
+    </string-array>
+    <string name="detail_idcard">身份证号:</string>
+    <string name="detail_workAddress">工作单位:</string>
+    <string name="detail_personalPhone">个人电话:</string>
+    <string name="detail_connectUserName">联系人姓名:</string>
+    <string name="detail_connectUserNums">联系人电话:</string>
+    <string name="detail_live_type">常住类型</string>
+    <string name="detail_live_type_register">戶籍</string>
+    <string name="detail_live_type_unregister">非戶籍</string>
+    <string name="detail_nation">民族</string>
+    <string name="detail_nation_han">汉</string>
+    <string name="detail_nation_other">少数民族</string>
+    <string name="detail_blood_type">血型</string>
+    <string name="detail_blood_A">A型</string>
+    <string name="detail_blood_B">B型</string>
+    <string name="detail_blood_O">O型</string>
+    <string name="detail_blood_AB">AB型</string>
+    <string name="detail_blood_other">不详</string>
+    <string name="detail_blood_RH">RH阴性</string>
+    <string name="detail_yes">是</string>
+    <string name="detail_no">否</string>
+    <string name="detail_degree_of_education">文化程度</string>
+    <string name="detail_degree_of_education_1">1.文盲及半文盲</string>
+    <string name="detail_degree_of_education_2">2.小学</string>
+    <string name="detail_degree_of_education_3">3.初中</string>
+    <string name="detail_degree_of_education_4">4.高中/技校/中专</string>
+    <string name="detail_degree_of_education_5">5.大学专科及以上</string>
+    <string name="detail_degree_of_education_6">6.不详</string>
+    <string name="detail_career">职业</string>
+    <string name="detail_career_1">1.国家机关、党群组织、企业、事业单位负责人</string>
+    <string name="detail_career_2">2.专业技术人员</string>
+    <string name="detail_career_3">3.办事人员和有关人员</string>
+    <string name="detail_career_4">4.商业、服务业人员</string>
+    <string name="detail_career_5">5.农、林、牧、渔、水利业生产人员</string>
+    <string name="detail_career_6">6.生产、运输设备操作人员及有关人员</string>
+    <string name="detail_career_7">7.军人</string>
+    <string name="detail_career_8">8.不便分类的其他从业人员</string>
+    <string name="detail_maritalStatus">婚姻狀況</string>
+    <string name="detail_maritalStatus_married">2.已婚</string>
+    <string name="detail_maritalStatus_unmarried">1.未婚</string>
+    <string name="detail_maritalStatus_windowed">3.丧偶</string>
+    <string name="detail_maritalStatus_divorced">4.离婚</string>
+    <string name="detail_maritalStatus_unknown">5.未说明的婚姻状况</string>
+    <string name="detail_payType">医疗费用支付方式</string>
+    <string name="detail_payType_1">1.城镇职工基本医疗保险</string>
+    <string name="detail_payType_2">2.城镇居民基本医疗保险</string>
+    <string name="detail_payType_3">3.新型农村合作医疗</string>
+    <string name="detail_payType_4">4.贫困救助</string>
+    <string name="detail_payType_5">5.商业医疗保险</string>
+    <string name="detail_payType_6">6.全公费</string>
+    <string name="detail_payType_7">7.全自费</string>
+    <string name="detail_payType_8">8.其他</string>
+    <string name="detail_history_allergy">药物过敏史</string>
+    <string name="detail_history_none">1.无</string>
+    <string name="detail_history_1">2.青霉素</string>
+    <string name="detail_history_2">3.磺胺</string>
+    <string name="detail_history_3">4.链霉素</string>
+    <string name="detail_history_4">5.其他</string>
+    <string name="detail_history_expose">暴露史</string>
+    <string name="detail_history_expose_1">1.无</string>
+    <string name="detail_history_expose_2">2.化学品</string>
+    <string name="detail_history_expose_3">3.毒药</string>
+    <string name="detail_history_expose_4">4.射线</string>
+
+    <string name="detail_history">既往史</string>
+    <string name="detail_history_disease">疾病</string>
+    <string name="detail_history_disease_none">1.无</string>
+    <string name="detail_history_disease_hypertension">2.高血压</string>
+    <string name="detail_history_disease_diabetes">3.糖尿病</string>
+    <string name="detail_history_disease_coronary">4.冠心病</string>
+    <string name="detail_history_disease_obstructive_lung_disease">5.慢性阻塞性肺疾病</string>
+    <string name="detail_history_disease_malignant">6.恶性肿瘤</string>
+    <string name="detail_history_disease_stroke">7.脑卒中</string>
+    <string name="detail_history_disease_psychosis">8.重性精神疾病</string>
+    <string name="detail_history_disease_tb">9.结核病</string>
+    <string name="detail_history_disease_hepatitis">10.肝炎</string>
+    <string name="detail_history_disease_otherExpose">11.其他法定传染病</string>
+    <string name="detail_history_disease_occ">12.职业病</string>
+    <string name="detail_history_disease_other1">13.其他</string>
+
+    <string name="detail_history_operation">手术</string>
+    <string name="detail_history_operation_1">1.无</string>
+    <string name="detail_history_operation_2">2.有：①名称</string>
+    <string name="detail_history_operation_3">时间</string>
+    <string name="detail_history_operation_4">②名称</string>
+
+    <string name="detail_history_trauma">外伤</string>
+    <!--外伤内容如手术-->
+
+    <string name="detail_history_transfusion">输血</string>
+    <string name="detail_history_transfusion_1">1.无</string>
+    <string name="detail_history_transfusion_2">2.有：①原因</string>
+    <string name="detail_history_transfusion_3">时间</string>
+    <string name="detail_history_transfusion_4">②原因</string>
+
+    <string name="detail_history_disease_time">确诊时间</string>
+    <string name="detail_history_disease_year">年</string>
+    <string name="detail_history_disease_month">月</string>
+
+    <string name="detail_history_home">家族史</string>
+    <string name="detail_history_home_father">父亲</string>
+    <string name="detail_history_home_mother">母亲</string>
+    <string name="detail_history_home_brother">兄弟姐妹</string>
+    <string name="detail_history_home_child">子女</string>
+    <!--疾病如既往史-&#45;&#45;疾病，附加两条-->
+    <string name="detail_history_disease_beforeborn">11.先天畸形</string>
+    <string name="detail_history_disease_other2">12.其他</string>
+
+    <string name="detail_history_disease_inherited">遗传病史</string>
+    <string name="detail_history_disease_inherited_yes">2.有：疾病名称</string>
+
+    <string name="detail_history_disease_disability">残疾情况</string>
+    <string name="detail_history_disease_disability_1">1.无残疾</string>
+    <string name="detail_history_disease_disability_2">2.视力残疾</string>
+    <string name="detail_history_disease_disability_3">3.听力残疾</string>
+    <string name="detail_history_disease_disability_4">4.言语残疾</string>
+    <string name="detail_history_disease_disability_5">5.肢体残疾</string>
+    <string name="detail_history_disease_disability_6">6.智力残疾</string>
+    <string name="detail_history_disease_disability_7">7.精神残疾</string>
+    <string name="detail_history_disease_disability_8">8.其他残疾</string>
+
+    <string name="detail_history_livingEnvironment">生活环境</string>
+    <string name="detail_history_livingEnvironment_kitchen">厨房排风设施</string>
+    <string-array name="detail_history_livingEnvironment_kitchen_array">
+        <item>1.无</item>
+        <item>2.油烟机</item>
+        <item>3.换气扇</item>
+        <item>4.烟囱</item>
+    </string-array>
+    <string name="detail_history_livingEnvironment_fuelType">燃料类型</string>
+    <string-array name="detail_history_livingEnvironment_fuelType_array">
+        <item>1.液化气</item>
+        <item>2.煤</item>
+        <item>3.天然气</item>
+        <item>4.沼气</item>
+        <item>5.柴火</item>
+        <item>6.其他</item>
+    </string-array>
+    <string name="detail_history_livingEnvironment_drinkingWater">饮水</string>
+    <string-array name="detail_history_livingEnvironment_drinkingWater_array">
+        <item>1.自來水</item>
+        <item>2.经净化过滤的水</item>
+        <item>3.井水</item>
+        <item>4.河湖水</item>
+        <item>5.塘水</item>
+        <item>6.其他</item>
+    </string-array>
+    <string name="detail_history_livingEnvironment_toilet">厕所</string>
+    <string-array name="detail_history_livingEnvironment_toilet_array">
+        <item>1.卫生厕所</item>
+        <item>2.一格或两格粪池式</item>
+        <item>3.马桶</item>
+        <item>4.露天粪坑</item>
+        <item>5.简易棚厕</item>
+    </string-array>
+    <string name="detail_history_livingEnvironment_livestock">禽畜栏</string>
+    <string-array name="detail_history_livingEnvironment_livestock_array">
+        <item>1.单设</item>
+        <item>2.室内</item>
+        <item>3.室外</item>
+
+    </string-array>
+    <!--通讯-->
+    <string name="netty_send_msg">欢迎来到康尚，竭诚为您服务</string>
+    <string name="socket_connect_success">连接成功</string>
+    <string name="socket_connect_fail">连接失败</string>
+    <!--病人信息-->
+    <string name="save_patient_sucess">保存成功!</string>
+    <string name="new_patient_record">新用户登录</string>
+
+    <!--奔溃-->
+    <string name="crash_down">很抱歉,程序出现异常,正在收集日志，即将退出</string>
+</resources>

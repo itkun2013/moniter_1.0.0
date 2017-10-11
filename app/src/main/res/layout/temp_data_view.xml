@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="体温"
+        android:textColor="@color/temp_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/temp"
+        android:layout_below="@id/temp"
+        android:text="℃"
+        android:textColor="@color/temp_color"
+        android:textSize="12sp" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/td_value"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="-?-"-->
+    <!--android:textColor="@color/temp_color_selector"-->
+    <!--android:textSize="20sp"-->
+    <!--android:textStyle="bold"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/td"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignTop="@id/td_value"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:layout_marginTop="-10dp"-->
+    <!--android:layout_toLeftOf="@id/td_value"-->
+    <!--android:text="TD"-->
+    <!--android:textColor="@color/temp_color"-->
+    <!--android:textSize="15sp"-->
+    <!--android:visibility="gone"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/temp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    T1"
+                android:textColor="@color/temp_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/t1_up_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/t1"
+                android:layout_below="@id/t1"
+                android:layout_marginTop="5dp"
+                android:text="102.2"
+                android:textColor="@color/temp_color_selector"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/t1_down_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/t1"
+                android:layout_below="@id/t1_up_value"
+                android:layout_marginTop="5dp"
+                android:text="96.8"
+                android:textColor="@color/temp_color_selector"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/t1_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/t1_down_value"
+                android:layout_below="@id/t1_down_value"
+                android:src="@drawable/alarm_low"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/t1_value"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/t1_down_value"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/t1"
+                android:gravity="center"
+                android:text="-?-"
+                android:textColor="@color/temp_color_selector"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

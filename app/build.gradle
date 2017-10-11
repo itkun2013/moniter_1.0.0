@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+import org.tmatesoft.svn.core.wc.*
+
+// 获取软件的svn版本
+def getSvnRevision() {
+    ISVNOptions options = SVNWCUtil.createDefaultOptions(true);
+    SVNClientManager clientManager = SVNClientManager.newInstance(options);
+    SVNStatusClient statusClient = clientManager.getStatusClient();
+    SVNStatus status = statusClient.doStatus(projectDir, false);
+    SVNRevision revision = status.getCommittedRevision();
+    return (Integer) revision.getNumber();
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.konsung"
+        minSdkVersion 16
+        targetSdkVersion 19
+        // 获取svn版本，用于作为修订版本号
+        versionCode getSvnRevision()
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            applicationIdSuffix ".dev"
+            versionNameSuffix "-dev"
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+    // 自定义APK安装包名
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.each {
+                output ->
+                    if (buildType.name.equals("debug")) {
+                        output.outputFile = new File(output.outputFile.parent,
+                                "Monitor_r" + defaultConfig.versionCode + "_V"
+                                        + defaultConfig.versionName + "-debug"
+                                        + ".apk");
+                    }
+                    if (buildType.name.equals("release")) {
+                        output.outputFile = new File(output.outputFile.parent,
+                                "Monitor_r" + defaultConfig.versionCode + "_V"
+                                        + defaultConfig.versionName + ".apk");
+                    }
+            }
+    }
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:recyclerview-v7:21.0.3'
+    //添加okhttp
+    compile 'com.zhy:okhttputils:2.6.2'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/xueyang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="血氧"
+        android:textColor="@color/spo_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/xueyang"
+        android:layout_below="@id/xueyang"
+        android:text="%"
+        android:textColor="@color/spo_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/up_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/xueyang"
+        android:layout_below="@id/sign"
+        android:text="100"
+        android:textColor="@color/spo_color_selector"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/down_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/xueyang"
+        android:layout_below="@id/up_value"
+        android:text="64"
+        android:textColor="@color/spo_color_selector"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarm_low"
+        android:layout_below="@id/down_value"
+        android:layout_alignRight="@id/down_value"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/m_value"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/m_down_value"
+        android:layout_alignTop="@+id/mailv"
+        android:layout_alignParentRight="true"
+        android:text="-?-"
+        android:gravity="center"
+        android:textColor="@color/spo_color_selector"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/mailv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/m_value"
+        android:text="脉率"
+        android:textColor="@color/spo_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/bpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mailv"
+        android:layout_below="@id/mailv"
+        android:text="bpm"
+        android:textColor="@color/spo_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/m_up_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/mailv"
+        android:layout_below="@id/sign"
+        android:text="118"
+        android:textColor="@color/spo_color_selector"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/m_down_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/mailv"
+        android:layout_below="@id/m_up_value"
+        android:text="57"
+        android:textColor="@color/spo_color_selector"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/m_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarm_low"
+        android:layout_below="@id/m_down_value"
+        android:layout_alignRight="@id/m_down_value"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/spo_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/down_value"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/mailv"
+        android:layout_toRightOf="@id/xueyang"
+        android:gravity="center"
+        android:text="-?-"
+        android:textColor="@color/spo_color_selector"
+        android:textSize="60sp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

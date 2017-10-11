@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/xinlv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="心率"
+        android:textColor="@color/ecg_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/bpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/xinlv"
+        android:layout_below="@id/xinlv"
+        android:text="bpm"
+        android:textColor="@color/ecg_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/up_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/xinlv"
+        android:layout_below="@id/bpm"
+        android:text="144"
+        android:textColor="@color/ecg_color_selector"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/down_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/xinlv"
+        android:layout_below="@id/up_value"
+        android:text="55"
+        android:textColor="@color/ecg_color_selector"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/down_value"
+        android:layout_below="@id/down_value"
+        android:src="@drawable/alarm_low"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/heart_beat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pvcs_value"
+        android:layout_alignRight="@+id/pvcs_value"
+        android:src="@drawable/heart_beat_selector" />
+
+    <TextView
+        android:id="@+id/pvcs_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/heart_beat"
+        android:text="-?-"
+        android:textColor="@color/ecg_color_selector"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+    <!--屏蔽图标-->
+    <!-- android:src="@drawable/alarm_low"-->
+    <ImageView
+        android:id="@+id/pulse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pvcs_value"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@id/pvcs_value"
+
+        />
+
+    <TextView
+        android:id="@+id/pvcs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pulse"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/pvcs_value"
+        android:text="PVCs"
+        android:textColor="@color/ecg_color"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+
+    <ImageView
+
+        android:id="@+id/alarm_pvcs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/pvcs"
+        android:layout_below="@id/pvcs"
+        android:src="@drawable/alarm_low"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/ecg_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/down_value"
+        android:layout_alignTop="@id/xinlv"
+        android:layout_toLeftOf="@id/pvcs"
+        android:layout_toRightOf="@id/xinlv"
+        android:gravity="center"
+        android:text="-?-"
+        android:textColor="@color/ecg_color_selector"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

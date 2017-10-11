@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <com.konsung.defineview.WaveForm_Ecg
+            android:id="@+id/wave_i"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <com.konsung.defineview.WaveForm_Ecg
+            android:id="@+id/wave_ii"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <com.konsung.defineview.WaveForm_Ecg
+            android:id="@+id/wave_iii"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <!--<com.konsung.defineview.WaveForm_Ecg-->
+            <!--android:id="@+id/wave_AVF"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp" />-->
+
+        <!--<com.konsung.defineview.WaveForm_Ecg-->
+            <!--android:id="@+id/wave_AVL"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp" />-->
+
+        <!--<com.konsung.defineview.WaveForm_Ecg-->
+            <!--android:id="@+id/wave_AVR"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp" />-->
+
+        <!--<com.konsung.defineview.WaveForm_Ecg-->
+            <!--android:id="@+id/wave_V1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp" />-->
+
+        <!--<com.konsung.defineview.WaveForm_Ecg-->
+            <!--android:id="@+id/wave_V2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp" />-->
+
+        <!--<com.konsung.defineview.WaveForm_Ecg-->
+            <!--android:id="@+id/wave_V3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp" />-->
+
+        <!--<com.konsung.defineview.WaveForm_Ecg-->
+            <!--android:id="@+id/wave_V4"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp" />-->
+
+        <!--<com.konsung.defineview.WaveForm_Ecg-->
+            <!--android:id="@+id/wave_V5"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp" />-->
+
+        <!--<com.konsung.defineview.WaveForm_Ecg-->
+            <!--android:id="@+id/wave_V6"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <com.konsung.defineview.EcgDataView
+            android:id="@+id/ecg_data_view"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <com.konsung.defineview.STDataView
+            android:id="@+id/st_data_view"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <!--<com.konsung.defineview.TempDataView-->
+            <!--android:id="@+id/temp_data_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp" />-->
+
+        <!--<com.konsung.defineview.NibpDataView-->
+            <!--android:id="@+id/nibp_data_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

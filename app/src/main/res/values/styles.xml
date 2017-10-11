@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="android:textSize">20sp</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="NoAcitionBarTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="DialogActivity" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="android:textColor">@color/transparent_black</item>
+    </style>
+
+</resources>

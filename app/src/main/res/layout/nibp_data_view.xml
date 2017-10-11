@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+    <TextView
+        android:id="@+id/nibp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="血压"
+        android:textColor="@color/nibp_color_selector"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/nibp"
+        android:text="--:--:--"
+        android:textColor="@color/nibp_color_selector"
+        android:textSize="12sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/nimp_controll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/time"
+        android:layout_toRightOf="@id/time"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+        <TextView
+            android:id="@+id/_nimp_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="袖带压力值:"
+            android:textColor="@color/nibp_color_selector"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/nimp_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:text="--"
+            android:textColor="@color/nibp_color_selector"
+            android:textSize="12sp"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="200dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/mailv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="脉率"
+        android:textColor="@color/nibp_color_selector"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/mailv_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-?-"
+        android:textColor="@color/nibp_color_selector"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/nibp"
+        android:layout_below="@id/nibp"
+        android:text="mmHg"
+        android:textColor="@color/nibp_color_selector"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/up_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/nibp"
+        android:layout_below="@id/unit"
+        android:lines="1"
+        android:text="21.3"
+        android:textColor="@color/nibp_color_selector"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/down_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/nibp"
+        android:layout_below="@id/up_value"
+        android:text="13.0"
+        android:lines="1"
+        android:textColor="@color/nibp_color_selector"
+        android:textSize="10sp"/>
+
+    <ImageView
+        android:id="@+id/alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/down_value"
+        android:layout_below="@id/down_value"
+        android:src="@drawable/alarm_low"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/value_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/down_value"
+        android:layout_below="@id/nibp"
+        android:layout_marginLeft="5dp"
+
+        android:layout_toRightOf="@id/nibp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/value_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-?-"
+            android:textColor="@color/nibp_color_selector"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="@color/nibp_color_selector"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/value_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-?-"
+            android:textColor="@color/nibp_color_selector"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="("
+            android:textColor="@color/nibp_color_selector"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/value_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-?-"
+            android:textColor="@color/nibp_color_selector"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")"
+            android:textColor="@color/nibp_color_selector"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/down_value"
+        android:text="2分钟"
+        android:textColor="@color/nibp_color_selector"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/time_num"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/time_num"
+        android:text="请按启动键"
+        android:textColor="@color/nibp_color_selector"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
+
+    <!--android:layout_alignBottom="@id/_nimp_tv"
+            android:layout_toRightOf="@id/_nimp_tv"
+            android:layout_alignTop="@id/_nimp_tv"-->

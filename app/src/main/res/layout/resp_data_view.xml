@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/resp_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="呼吸率"
+        android:textColor="@color/resp_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/rpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/resp_tv"
+        android:layout_below="@id/resp_tv"
+        android:text="rpm"
+        android:textColor="@color/resp_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/up_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/resp_tv"
+        android:layout_below="@id/rpm"
+        android:text="144"
+        android:textColor="@color/resp_color_selector"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/down_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/resp_tv"
+        android:layout_below="@id/up_value"
+        android:text="55"
+        android:textColor="@color/resp_color_selector"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarm_low"
+        android:layout_below="@id/down_value"
+        android:layout_alignRight="@id/down_value"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/resp_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/down_value"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/resp_tv"
+        android:gravity="center"
+        android:text="-?-"
+        android:textColor="@color/resp_color_selector"
+        android:textSize="60sp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
